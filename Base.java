@@ -9,7 +9,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.remote.MobileCapabilityType;
 
-public class base {
+public class Base {
 
 	
 	
@@ -22,10 +22,16 @@ public class base {
 	     File app = new File(appDir, "AppName.apk");
 	     
 	     DesiredCapabilities cap = new DesiredCapabilities();
-	     cap.setCapability(MobileCapabilityType.DEVICE_NAME, "1080x2160");
+		// define emulator/virtual device capabilities
+	     cap.setCapability(MobileCapabilityType.DEVICE_NAME, "emulatorName");
+		
+		//define automation name- app to be used to get elements
 			cap.setCapability(MobileCapabilityType.AUTOMATION_NAME,"uiautomator2");
-			
+		
+		//define tested app path
 			cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
+		
+		//Assign driver
 			driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"),cap);
 	     
 		return driver;
