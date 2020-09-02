@@ -1,0 +1,11 @@
+1- Download Java and set Java_Home in environmental variables 
+
+2- Download Android STUDIO : https://developer.android.com/studio/index.html
+3- Set Android_Home Environmental variables path to SDK location and include bin folder paths in PATH variable 
+4- configure Virtual device/Emulator
+
+5- Download Node.js : https://nodejs.org/en/download/
+6- Set Node_Home Environmental variables path
+7- Set npm Environmental variables path 
+8- Download Appium Server from Node
+c:\>npm install – g appium
